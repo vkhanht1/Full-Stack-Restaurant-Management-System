@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { FaEye, FaEyeSlash, FaCheckCircle, FaArrowLeft } from 'react-icons/fa';
 
-const url = 'https://miska-pho-backend.vercel.app';
+const url = 'http://localhost:5000';
 
 const AwesomeToast = ({ message, icon }) => (
   <div className="animate-slide-in fixed bottom-6 right-6 flex items-center bg-gradient-to-br

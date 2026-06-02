@@ -5,7 +5,7 @@ import { FaMinus, FaPlus, FaTrash, FaTimes, FaArrowRight } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion';
 import ContactImg from "../../assets/img9.jpg";
 
-const API_URL = "https://miska-pho-backend.vercel.app";
+const API_URL = "http://localhost:5000";
 
 const CartPage = () => {
   const { cartItems, removeFromCart, updateQuantity, totalAmount } = useCart();

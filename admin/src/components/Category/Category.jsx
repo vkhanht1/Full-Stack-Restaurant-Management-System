@@ -11,7 +11,7 @@ const styles = {
 };
 
 const Category = ({ url }) => {
-    const API_URL = url || "https://miska-pho-backend.vercel.app";
+    const API_URL = url || "http://localhost:5000";
     const [categories, setCategories] = useState([]);
     const [newCatName, setNewCatName] = useState("");
     const [editingId, setEditingId] = useState(null);

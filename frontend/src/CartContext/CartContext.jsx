@@ -2,7 +2,7 @@ import React, { createContext, useContext, useReducer, useEffect, useCallback } 
 import axios from 'axios';
 
 const CartContext = createContext();
-const API_URL = "https://miska-pho-backend.vercel.app/api/cart";
+const API_URL = "http://localhost:5000/api/cart";
 // reducer
 const cartReducer = (state, action) => {
   switch (action.type) {

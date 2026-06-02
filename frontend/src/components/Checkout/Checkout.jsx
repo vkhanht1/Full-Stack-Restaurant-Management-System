@@ -30,7 +30,7 @@ const CheckoutPage = () => {
     note: ''
   });
 
-  const API_URL = 'https://miska-pho-backend.vercel.app';
+  const API_URL = 'http://localhost:5000';
   const token = localStorage.getItem('token') || localStorage.getItem('authToken');
   const authHeaders = token ? { Authorization: `Bearer ${token}` } : {};
 

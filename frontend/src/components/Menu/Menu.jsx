@@ -11,7 +11,7 @@ const OurMenu = () => {
   const [menuData, setMenuData] = useState({});
   const { cartItems: rawCart, addToCart, updateQuantity, removeFromCart } = useCart();
   const cartItems = rawCart.filter(ci => ci.item);
-  const API_URL = "https://miska-pho-backend.vercel.app";
+  const API_URL = "http://localhost:5000";
 
   useEffect(() => {
     const fetchCategories = async () => {

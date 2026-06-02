@@ -12,7 +12,7 @@ import Category from './components/Category/Category';
 // main admin application
 function App() {
   // backend api URL
-  const url = "https://miska-pho-backend.vercel.app";
+  const url = "http://localhost:5000";
   const [token, setToken] = useState(localStorage.getItem('token'));
 
   return (

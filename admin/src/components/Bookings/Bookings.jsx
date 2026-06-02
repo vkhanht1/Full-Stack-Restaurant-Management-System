@@ -19,7 +19,7 @@ const tableClasses = {
 };
 
 const Bookings = () => {
-    const API_URL = "https://miska-pho-backend.vercel.app";
+    const API_URL = "http://localhost:5000";
     const [list, setList] = useState([]);
     const [loading, setLoading] = useState(true);
 

@@ -65,7 +65,7 @@ const Orders = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_URL = "https://miska-pho-backend.vercel.app";
+  const API_URL = "http://localhost:5000";
   const getToken = () => localStorage.getItem("token");
 
   useEffect(() => {

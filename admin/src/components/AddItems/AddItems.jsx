@@ -21,7 +21,7 @@ const styles = {
 };
 
 const AddItems = ({ url }) => {
-  const API_URL = url || "https://miska-pho-backend.vercel.app";
+  const API_URL = url || "http://localhost:5000";
 
   const [formData, setFormData] = useState({
     name: '',

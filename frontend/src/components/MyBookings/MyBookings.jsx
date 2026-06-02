@@ -4,7 +4,7 @@ import { FiCalendar, FiClock, FiUsers, FiInfo, FiCheckCircle, FiXCircle, FiLoade
 import { Link } from 'react-router-dom';
 import About1 from "../../assets/img10.jpg";
 
-const API_URL = "https://miska-pho-backend.vercel.app";
+const API_URL = "http://localhost:5000";
 
 const MyBookings = () => {
     const [bookings, setBookings] = useState([]);

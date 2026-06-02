@@ -6,7 +6,7 @@ It handles everything from secure user authentication to complex financial trans
 Live API Server:
 
 The backend is currently hosted and running on:
-https://miska-pho-backend.vercel.app/
+http://localhost:5000/
 
 Tech Stack:
 

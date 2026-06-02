@@ -9,7 +9,7 @@ const styles = {
 };
 
 const ListItems = () => {
-  const API_URL = "https://miska-pho-backend.vercel.app";
+  const API_URL = "http://localhost:5000";
   const [list, setList] = useState([]);
   const [categories, setCategories] = useState([]);
   const [isEditing, setIsEditing] = useState(false);

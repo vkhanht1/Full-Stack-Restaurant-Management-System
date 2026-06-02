@@ -6,7 +6,7 @@ import { FiCalendar, FiClock, FiUsers, FiUser, FiPhone, FiMessageSquare, FiMapPi
 import { motion } from 'framer-motion';
 import BookingImg from "../../assets/img1.jpg";
 
-const API_URL = 'https://miska-pho-backend.vercel.app';
+const API_URL = 'http://localhost:5000';
 const Booking = () => {
     const navigate = useNavigate();
     const [loading, setLoading] = useState(false);

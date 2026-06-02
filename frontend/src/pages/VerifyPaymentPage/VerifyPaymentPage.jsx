@@ -10,7 +10,7 @@ const VerifyPaymentPage = () => {
   const sessionId = searchParams.get("session_id");
   const navigate = useNavigate();
   const { clearCart } = useCart();
-  const API_URL = "https://miska-pho-backend.vercel.app";
+  const API_URL = "http://localhost:5000";
 
   useEffect(() => {
     const verifyPayment = async () => {

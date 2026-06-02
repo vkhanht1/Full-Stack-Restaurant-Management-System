@@ -17,7 +17,7 @@ Customer App https://miska-pho-frontend.vercel.app/
 
 Admin Panel https://miska-pho-admin.vercel.app/
 
-API Server https://miska-pho-backend.vercel.app/
+API Server http://localhost:5000/
 
 Key Technical Features:
 
