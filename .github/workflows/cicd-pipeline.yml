@@ -4,6 +4,10 @@ on:
   push:
     branches: [ "main" ]
 
+permissions:
+  packages: write
+  contents: read
+
 jobs:
   continuous-integration:
     runs-on: ubuntu-latest
@@ -34,6 +38,13 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Log in to GitHub Container Registry (GHCR)
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
@@ -42,7 +53,9 @@ jobs:
         with:
           context: ./backend
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/miskapho-backend:latest
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/miskapho-backend:latest
+            ghcr.io/vkhanhtran1/full-stack-restaurant-management-system-backend:latest
 
       - name: Build and push Frontend Docker image
         uses: docker/build-push-action@v5
@@ -51,7 +64,9 @@ jobs:
           push: true
           build-args: |
             VITE_API_BASE_URL=http://localhost:5000
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/miskapho-frontend:latest
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/miskapho-frontend:latest
+            ghcr.io/vkhanhtran1/full-stack-restaurant-management-system-frontend:latest
 
       - name: Build and push Admin Docker image
         uses: docker/build-push-action@v5
@@ -60,4 +75,6 @@ jobs:
           push: true
           build-args: |
             VITE_API_BASE_URL=http://localhost:5000
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/miskapho-admin:latest
+          tags: |
+            ${{ secrets.DOCKERHUB_USERNAME }}/miskapho-admin:latest
+            ghcr.io/vkhanhtran1/full-stack-restaurant-management-system-admin:latest
