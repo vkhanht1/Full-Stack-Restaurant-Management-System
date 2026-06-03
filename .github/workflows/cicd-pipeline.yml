@@ -55,7 +55,7 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/miskapho-backend:latest
-            ghcr.io/vkhanhtran1/full-stack-restaurant-management-system-backend:latest
+            ghcr.io/${{ github.repository_owner }}/full-stack-restaurant-management-system-backend:latest
 
       - name: Build and push Frontend Docker image
         uses: docker/build-push-action@v5
@@ -66,7 +66,7 @@ jobs:
             VITE_API_BASE_URL=http://localhost:5000
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/miskapho-frontend:latest
-            ghcr.io/vkhanhtran1/full-stack-restaurant-management-system-frontend:latest
+            ghcr.io/${{ github.repository_owner }}/full-stack-restaurant-management-system-frontend:latest
 
       - name: Build and push Admin Docker image
         uses: docker/build-push-action@v5
@@ -77,4 +77,4 @@ jobs:
             VITE_API_BASE_URL=http://localhost:5000
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/miskapho-admin:latest
-            ghcr.io/vkhanhtran1/full-stack-restaurant-management-system-admin:latest
+            ghcr.io/${{ github.repository_owner }}/full-stack-restaurant-management-system-admin:latest
