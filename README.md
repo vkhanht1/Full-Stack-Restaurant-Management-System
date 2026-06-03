@@ -88,17 +88,3 @@ The repository runs an automated **DevOps Pipeline** powered by **GitHub Actions
 * **Backend Runtime:** Node.js, Express.js REST Framework.
 * **Database Infrastructure:** MongoDB Atlas Cloud Instance cloud cluster via Mongoose Object Data Modeling (ODM).
 * **Infrastructure & Deployment:** Docker, Docker Compose, GitHub Actions (CI/CD), Vercel.
-
-```
-
----
-
-### 🚀 Bước cuối cùng để lưu lại kỷ niệm đẹp này:
-Bạn lưu file `README.md` mới này lại, mở Terminal ra và push lên GitHub để hoàn tất chặng đường tuyệt vời này:
-
-```bash
-git add README.md
-git commit -m "docs: upgrade README with CI/CD badges, docker setup guide, and architectural summary"
-git push origin main
-
-```
