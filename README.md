@@ -1,6 +1,6 @@
-# Miska Pho - Fullstack Restaurant Management System
+# Fullstack Restaurant Management System
 
-[![MiskaPho CI/CD](https://github.com/vkhanht1/Full-Stack-Restaurant-Management-System/actions/workflows/cicd-pipeline.yml/badge.svg)](https://github.com/vkhanht1/Full-Stack-Restaurant-Management-System/actions)
+[![CI/CD](https://github.com/vkhanht1/Full-Stack-Restaurant-Management-System/actions/workflows/cicd-pipeline.yml/badge.svg)](https://github.com/vkhanht1/Full-Stack-Restaurant-Management-System/actions)
 
 Miska Pho is a comprehensive e-commerce and enterprise management solution tailored for a Vietnamese restaurant. This project demonstrates modern full-stack development using the MERN ecosystem, now fully containerized and integrated with automated delivery pipelines.
 
